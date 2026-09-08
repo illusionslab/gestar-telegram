@@ -16,9 +16,9 @@ export default async function handler(req, res) {
   }
 
   const botToken = (process.env.TELEGRAM_BOT_TOKEN || "").trim();
-  const chatId = (process.env.TELEGRAM_CHAT_ID || "").trim();
+  const chatId = -5236072453;
 
-  if (!botToken || !chatId) {
+  if (!botToken) {
     return res.status(500).json({
       error: "Telegram configuration missing"
     });
